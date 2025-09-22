@@ -8,8 +8,8 @@
     },
     "overrideCommand": false,
     "forwardPorts": [
-        5901, // VNC (Desktop)
-        6080  // noVNC (Akses via Browser)
+        5901,
+        6080
     ],
     "postCreateCommand": "bash .devcontainer/post-create.sh"
 }
