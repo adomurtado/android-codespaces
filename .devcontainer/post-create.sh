@@ -2,8 +2,11 @@
 set -e  # Exit on any error
 
 echo "Starting post-create script..."
+echo "OS Info: $(cat /etc/os-release | grep PRETTY_NAME)"
 
-# Update paket dan install dependensi dasar & desktop environment
+# Pastikan environment non-interactive
+export DEBIAN_FRONTEND=noninteractive
+
 echo "Updating package lists..."
 sudo apt-get update
 
