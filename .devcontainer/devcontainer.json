@@ -1,0 +1,15 @@
+{
+    "name": "Android Development Environment",
+    "image": "[mcr.microsoft.com/devcontainers/base:ubuntu](https://mcr.microsoft.com/devcontainers/base:ubuntu)",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17"
+        }
+    },
+    "overrideCommand": false,
+    "forwardPorts": [
+        5901, // VNC (Desktop)
+        6080  // noVNC (Akses via Browser)
+    ],
+    "postCreateCommand": "bash .devcontainer/post-create.sh"
+}
